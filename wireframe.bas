@@ -591,13 +591,13 @@ End Function
 Public Function TestAngle(X As Long, Y As Long, Distance As Long, Angle As Long) As String
     TestAngle = findXYAngle(X, Y, Distance, Angle, True) & ", " & findXYAngle(X, Y, Distance, Angle, False)
 End Function
-Public Function GetPoint3D(Dest As PictureBox, X As Single, Y As Single)
-    Dim temp As Point3D
-    temp.Radius = Distance(Dest.Width * 0.5, Dest.Height * 0.5, X, Y) / (Dest.Width * 0.5)
-    temp.Angle = GetAngle(Dest.Width * 0.5, Dest.Height * 0.5, X, Y)
-    temp.Z = vdepth.Value * 0.01
-    GetPoint3D = temp
-End Function
+'Public Function GetPoint3D(Dest As PictureBox, X As Single, Y As Single)
+    'Dim temp As Point3D 'does not appear to be used
+    'temp.Radius = Distance(Dest.Width * 0.5, Dest.Height * 0.5, X, Y) / (Dest.Width * 0.5)
+   ' temp.Angle = GetAngle(Dest.Width * 0.5, Dest.Height * 0.5, X, Y)
+    'temp.Z = vdepth.Value * 0.01'vdepth is not found
+    'GetPoint3D = temp
+'End Function
 
 
 
